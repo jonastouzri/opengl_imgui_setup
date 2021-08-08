@@ -42,6 +42,9 @@
     <ClCompile Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_tables.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\imgui_setup\imgui\imgui_impl_glfw.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imstb_rectpack.h">
