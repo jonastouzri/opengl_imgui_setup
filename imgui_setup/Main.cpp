@@ -3,6 +3,11 @@
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
+//#include "imgui_internal.h"
+
+
+#include "implot.h"
+
 
 
 #include <iostream>
@@ -59,8 +64,11 @@ int main() {
 
 	
 
+		//ImGui::ImPlotFlags p_flgs = ImPlotFlags_Legend | ImPlotFlags_AntiAliased;
+		//ImAxisFlags x_flgs = ImAxisFlags_GridLines | ImAxisFlags_LogScale;
+		//ImAxisFlags y_flgs = ImAxisFlags_GridLines | ImAxisFlags_TickLabels;
 
-
+	ImPlot::CreateContext();
 
 
 	while (!glfwWindowShouldClose(window)){
@@ -77,6 +85,34 @@ int main() {
 
 		const float my_values[] = { 0.2f, 0.1f, 1.0f, 0.5f, 0.9f, 2.2f };
 		ImGui::PlotLines("Frame Times", my_values, IM_ARRAYSIZE(my_values));
+
+		//--------------------------------------------------------------------
+
+		
+		int   bar_data[3] = {0,1,2};
+		float x_data[3] = {2,3,5};
+		float y_data[3] = {7,4,5};
+
+		ImGui::Begin("Plot");
+		if (ImPlot::BeginPlot("My Plot")) {
+			ImPlot::PlotBars("My Bar Plot", bar_data, 3);
+			ImPlot::PlotLine("My Line Plot", x_data, y_data, 3);
+
+		
+
+				ImPlot::EndPlot();
+		}
+		ImGui::End();
+
+		
+
+
+
+
+
+
+
+		//----------------------------------------------------------
 
 
 		ImGui::End();
@@ -100,6 +136,9 @@ int main() {
 
 	ImGui_ImplOpenGL3_Shutdown();
 	ImGui_ImplGlfw_Shutdown();
+
+
+	ImPlot::DestroyContext();
 	ImGui::DestroyContext();
 
 	glfwTerminate();
