@@ -81,9 +81,10 @@ int main() {
 
 		glClear(GL_COLOR_BUFFER_BIT);
 
+		//--------------------------------------------------------------------
+
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGlfw_NewFrame();
-
 		ImGui::NewFrame();
 		ImGui::Begin("window");
 		ImGui::Text("hello");
@@ -102,26 +103,24 @@ int main() {
 		if (ImPlot::BeginPlot("My Plot")) {
 			ImPlot::PlotBars("My Bar Plot", bar_data, 3);
 			ImPlot::PlotLine("My Line Plot", x_data, y_data, 3);
-
-		
-
-				ImPlot::EndPlot();
+			ImPlot::EndPlot();
 		}
 		ImGui::End();
+		//--------------------------------------------------------------------
+		// from demo
+		
+		ImGui::ShowDemoWindow();
+
+	
 
 		
 
 
 
-
-
-
-
-		//----------------------------------------------------------
-
+		//--------------------------------------------------------------------
 
 		ImGui::End();
-
+		
 		ImGui::Render();
 		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
