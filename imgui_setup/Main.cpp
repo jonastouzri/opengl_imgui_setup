@@ -63,6 +63,7 @@ int main() {
 	ImGuiIO& io = ImGui::GetIO(); (void)io;
 	ImGui::StyleColorsDark();
 
+
 	ImGui_ImplGlfw_InitForOpenGL(window, true);
 	ImGui_ImplOpenGL3_Init("#version 330");
 
@@ -95,18 +96,18 @@ int main() {
 
 		//std::cout << pos.x << std::endl;
 
-		ImGui::SetNextWindowContentSize(ImVec2(200, 200));
-		ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
-		static bool menu = true;
-		ImGui::Begin("Test #1490, v2", NULL, ImGuiWindowFlags_AlwaysAutoResize | (menu ? ImGuiWindowFlags_MenuBar : 0));
-		ImVec2 p1 = ImGui::GetCursorScreenPos();
-		ImVec2 p2 = ImVec2(p1.x + 200, p1.y + 200);
-		ImGui::Checkbox("Menu", &menu);
-		ImGui::GetWindowDrawList()->AddLine(p1, p2, IM_COL32(255, 0, 255, 255));
-		ImGui::GetWindowDrawList()->AddCircleFilled(p1, 6.0f, IM_COL32(255, 0, 255, 255));
-		ImGui::GetWindowDrawList()->AddCircleFilled(p2, 6.0f, IM_COL32(255, 0, 255, 255));
-		ImGui::End();
-		ImGui::PopStyleVar();
+		//ImGui::SetNextWindowContentSize(ImVec2(200, 200));
+		//ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
+		//static bool menu = true;
+		//ImGui::Begin("Test #1490, v2", NULL, ImGuiWindowFlags_AlwaysAutoResize | (menu ? ImGuiWindowFlags_MenuBar : 0));
+		//ImVec2 p1 = ImGui::GetCursorScreenPos();
+		//ImVec2 p2 = ImVec2(p1.x + 200, p1.y + 200);
+		//ImGui::Checkbox("Menu", &menu);
+		//ImGui::GetWindowDrawList()->AddLine(p1, p2, IM_COL32(255, 0, 255, 255));
+		//ImGui::GetWindowDrawList()->AddCircleFilled(p1, 6.0f, IM_COL32(255, 0, 255, 255));
+		//ImGui::GetWindowDrawList()->AddCircleFilled(p2, 6.0f, IM_COL32(255, 0, 255, 255));
+		//ImGui::End();
+		//ImGui::PopStyleVar();
 
 
 
