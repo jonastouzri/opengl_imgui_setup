@@ -68,16 +68,16 @@ int main() {
 
 	//-----------------------------------------------------------
 
-	//	// Start the Dear ImGui frame
+	////	// Start the Dear ImGui frame
 	//ImGui_ImplOpenGL3_NewFrame();
 	//ImGui_ImplGlfw_NewFrame();
 	//ImGui::NewFrame();
 
 	//// Create the docking environment
-	ImGuiWindowFlags windowFlags = ImGuiWindowFlags_NoDocking | ImGuiWindowFlags_NoTitleBar |
-		ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove |
-		ImGuiWindowFlags_NoBringToFrontOnFocus | ImGuiWindowFlags_NoNavFocus |
-		ImGuiWindowFlags_NoBackground;
+	//ImGuiWindowFlags windowFlags = ImGuiWindowFlags_NoDocking | ImGuiWindowFlags_NoTitleBar |
+	//	ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove |
+	//	ImGuiWindowFlags_NoBringToFrontOnFocus | ImGuiWindowFlags_NoNavFocus |
+	//	ImGuiWindowFlags_NoBackground;
 
 	//ImGuiViewport* viewport = ImGui::GetMainViewport();
 	//ImGui::SetNextWindowPos(viewport->Pos);
