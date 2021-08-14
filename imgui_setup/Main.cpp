@@ -68,90 +68,24 @@ int main() {
 	ImGui_ImplOpenGL3_Init("#version 330");
 
 
-	
 
-		//ImGui::ImPlotFlags p_flgs = ImPlotFlags_Legend | ImPlotFlags_AntiAliased;
-		//ImAxisFlags x_flgs = ImAxisFlags_GridLines | ImAxisFlags_LogScale;
-		//ImAxisFlags y_flgs = ImAxisFlags_GridLines | ImAxisFlags_TickLabels;
 
-	ImPlot::CreateContext();
 
 
 	while (!glfwWindowShouldClose(window)){
 
-
 		glClear(GL_COLOR_BUFFER_BIT);
 
-		//--------------------------------------------------------------------
 
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGlfw_NewFrame();
 
-		
 		ImGui::NewFrame();
-		//
 		ImGui::Begin("window");
-		ImGui::SetWindowPos(ImVec2(0,200), ImGuiCond_FirstUseEver);
-		//ImVec2 pos = ImGui::GetWindowPos();
-
-		//std::cout << pos.x << std::endl;
-
-		//ImGui::SetNextWindowContentSize(ImVec2(200, 200));
-		//ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
-		//static bool menu = true;
-		//ImGui::Begin("Test #1490, v2", NULL, ImGuiWindowFlags_AlwaysAutoResize | (menu ? ImGuiWindowFlags_MenuBar : 0));
-		//ImVec2 p1 = ImGui::GetCursorScreenPos();
-		//ImVec2 p2 = ImVec2(p1.x + 200, p1.y + 200);
-		//ImGui::Checkbox("Menu", &menu);
-		//ImGui::GetWindowDrawList()->AddLine(p1, p2, IM_COL32(255, 0, 255, 255));
-		//ImGui::GetWindowDrawList()->AddCircleFilled(p1, 6.0f, IM_COL32(255, 0, 255, 255));
-		//ImGui::GetWindowDrawList()->AddCircleFilled(p2, 6.0f, IM_COL32(255, 0, 255, 255));
-		//ImGui::End();
-		//ImGui::PopStyleVar();
-
-
-
-
-		//ImGui::Text("hello");
-		//const float my_values[] = { 0.2f, 0.1f, 1.0f, 0.5f, 0.9f, 2.2f };
-		//ImGui::PlotLines("Frame Times", my_values, IM_ARRAYSIZE(my_values));
-		//
-
+		ImGui::Text("hello");
 		ImGui::End();
-
-		//--------------------------------------------------------------------
-
-		
-		//int   bar_data[3] = {0,1,2};
-		//float x_data[3] = {2,3,5};
-		//float y_data[3] = {7,4,5};
-
-		//ImGui::Begin("Plot");
-		//if (ImPlot::BeginPlot("My Plot")) {
-		//	ImPlot::PlotBars("My Bar Plot", bar_data, 3);
-		//	ImPlot::PlotLine("My Line Plot", x_data, y_data, 3);
-		//	ImPlot::EndPlot();
-		//}
-		//ImGui::End();
-		//--------------------------------------------------------------------
-		// from demo
-		
-		//ImGui::ShowDemoWindow();
-
-	
-
-		
-
-
-
-		//--------------------------------------------------------------------
-
-		//ImGui::End();
-		
 		ImGui::Render();
 		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-
-		
 
 
 		glfwSwapBuffers(window);
@@ -169,24 +103,11 @@ int main() {
 	ImGui_ImplGlfw_Shutdown();
 
 
-	ImPlot::DestroyContext();
 	ImGui::DestroyContext();
 
 	glfwTerminate();
 
 
-
-
-
-
-	//IMGUI_CHECKVERSION();
-	//ImGui::CreateContext();
-	//ImGuiIO& io = ImGui::GetIO();
-
-
-
-
-	//(void)io;
 
 
 
