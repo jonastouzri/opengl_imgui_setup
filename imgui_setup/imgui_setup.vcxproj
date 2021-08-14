@@ -88,7 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\imgui;..\implot;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\imgui_docking;..\implot;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,29 +140,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui.cpp" />
-    <ClCompile Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_demo.cpp" />
-    <ClCompile Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_draw.cpp" />
-    <ClCompile Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_impl_opengl3.cpp" />
-    <ClCompile Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_tables.cpp" />
-    <ClCompile Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_widgets.cpp" />
-    <ClCompile Include="..\..\imgui_setup\imgui\imgui_impl_glfw.cpp" />
-    <ClCompile Include="..\implot\implot.cpp" />
-    <ClCompile Include="..\implot\implot_demo.cpp" />
-    <ClCompile Include="..\implot\implot_items.cpp" />
+    <ClCompile Include="..\imgui_docking\imgui.cpp" />
+    <ClCompile Include="..\imgui_docking\imgui_demo.cpp" />
+    <ClCompile Include="..\imgui_docking\imgui_draw.cpp" />
+    <ClCompile Include="..\imgui_docking\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\imgui_docking\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\imgui_docking\imgui_tables.cpp" />
+    <ClCompile Include="..\imgui_docking\imgui_widgets.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imconfig.h" />
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui.h" />
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_impl_glfw.h" />
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_impl_opengl3.h" />
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_internal.h" />
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imstb_rectpack.h" />
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imstb_textedit.h" />
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imstb_truetype.h" />
-    <ClInclude Include="..\implot\implot.h" />
-    <ClInclude Include="..\implot\implot_internal.h" />
+    <ClInclude Include="..\imgui_docking\imconfig.h" />
+    <ClInclude Include="..\imgui_docking\imgui.h" />
+    <ClInclude Include="..\imgui_docking\imgui_impl_glfw.h" />
+    <ClInclude Include="..\imgui_docking\imgui_impl_opengl3.h" />
+    <ClInclude Include="..\imgui_docking\imgui_internal.h" />
+    <ClInclude Include="..\imgui_docking\imstb_rectpack.h" />
+    <ClInclude Include="..\imgui_docking\imstb_textedit.h" />
+    <ClInclude Include="..\imgui_docking\imstb_truetype.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

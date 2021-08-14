@@ -14,83 +14,62 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="Header Files\imgui">
-      <UniqueIdentifier>{0e604f7b-e51b-4b6f-b370-5da323593ff5}</UniqueIdentifier>
+      <UniqueIdentifier>{08464b2d-5128-41dc-a418-7c5655c54927}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\imgui">
-      <UniqueIdentifier>{c31ddf30-f4fe-42f2-9aa5-ab999ef2aa04}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\implot">
-      <UniqueIdentifier>{b6bae9e7-c982-4069-927d-70a9d1467901}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\implot">
-      <UniqueIdentifier>{ed150ef6-7896-45fb-928d-177c6b65c966}</UniqueIdentifier>
+      <UniqueIdentifier>{a832ebe1-55c7-485e-8efe-a6785e2fdd98}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_widgets.cpp">
+    <ClCompile Include="..\imgui_docking\imgui_widgets.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui.cpp">
+    <ClCompile Include="..\imgui_docking\imgui.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_demo.cpp">
+    <ClCompile Include="..\imgui_docking\imgui_demo.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_draw.cpp">
+    <ClCompile Include="..\imgui_docking\imgui_draw.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_impl_opengl3.cpp">
+    <ClCompile Include="..\imgui_docking\imgui_impl_glfw.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_tables.cpp">
+    <ClCompile Include="..\imgui_docking\imgui_impl_opengl3.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\imgui_setup\imgui\imgui_impl_glfw.cpp">
+    <ClCompile Include="..\imgui_docking\imgui_tables.cpp">
       <Filter>Source Files\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\implot\implot_items.cpp">
-      <Filter>Source Files\implot</Filter>
-    </ClCompile>
-    <ClCompile Include="..\implot\implot.cpp">
-      <Filter>Source Files\implot</Filter>
-    </ClCompile>
-    <ClCompile Include="..\implot\implot_demo.cpp">
-      <Filter>Source Files\implot</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imstb_rectpack.h">
+    <ClInclude Include="..\imgui_docking\imstb_truetype.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imstb_textedit.h">
+    <ClInclude Include="..\imgui_docking\imconfig.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imstb_truetype.h">
+    <ClInclude Include="..\imgui_docking\imgui.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imconfig.h">
+    <ClInclude Include="..\imgui_docking\imgui_impl_glfw.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui.h">
+    <ClInclude Include="..\imgui_docking\imgui_impl_opengl3.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_impl_glfw.h">
+    <ClInclude Include="..\imgui_docking\imgui_internal.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_impl_opengl3.h">
+    <ClInclude Include="..\imgui_docking\imstb_rectpack.h">
       <Filter>Header Files\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Users\jonas\OneDrive\Desktop\imgui\imgui_internal.h">
+    <ClInclude Include="..\imgui_docking\imstb_textedit.h">
       <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\implot\implot_internal.h">
-      <Filter>Header Files\implot</Filter>
-    </ClInclude>
-    <ClInclude Include="..\implot\implot.h">
-      <Filter>Header Files\implot</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
