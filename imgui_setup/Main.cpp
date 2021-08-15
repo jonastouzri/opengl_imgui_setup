@@ -100,29 +100,80 @@ int main() {
 
 
 
+	ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize,0.0f);
+	ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 5.0f);
 
+	ImGuiWindowFlags windowFlags = ImGuiWindowFlags_NoDocking | ImGuiWindowFlags_NoNavFocus |
+									ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse;
 
 
 	while (!glfwWindowShouldClose(window)){
 
 		glClear(GL_COLOR_BUFFER_BIT);
 
+		//
 
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGlfw_NewFrame();
+	//
+
+
+		
+		
 
 		ImGui::NewFrame();
-		ImGui::Begin("window");
+		
+	
+
+
+
+		
+
+
+		bool b = false;
+		ImGui::Begin("test", &b, 0);
+		//ImGui::Begin("window");
+
 		ImGui::Text("hello");
+
+
 		ImGui::End();
 		ImGui::Render();
 		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-
-
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 
+		//----------------------------------------------------
 
+	//// Start the Dear ImGui frame
+	//	ImGui_ImplOpenGL3_NewFrame();
+	//	ImGui_ImplGlfw_NewFrame();
+	//	ImGui::NewFrame();
+
+	//	// Create the docking environment
+	//	ImGuiWindowFlags windowFlags = ImGuiWindowFlags_NoDocking | ImGuiWindowFlags_NoTitleBar |
+	//		ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove |
+	//		ImGuiWindowFlags_NoBringToFrontOnFocus | ImGuiWindowFlags_NoNavFocus |
+	//		ImGuiWindowFlags_NoBackground;
+
+	//	ImGuiViewport* viewport = ImGui::GetMainViewport();
+	//	ImGui::SetNextWindowPos(viewport->Pos);
+	//	ImGui::SetNextWindowSize(viewport->Size);
+	//	ImGui::SetNextWindowViewport(viewport->ID);
+
+	//	//ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 0.0f);
+	//	//ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 0.0f);
+	//	//ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0.0f, 0.0f));
+
+	//	ImGui::Begin("InvisibleWindow", nullptr, windowFlags);
+	//	//ImGui::PopStyleVar(3);
+
+	//	ImGuiID dockSpaceId = ImGui::GetID("InvisibleWindowDockSpace");
+	//	ImGui::DockSpace(dockSpaceId, ImVec2(0.0f, 0.0f), ImGuiDockNodeFlags_PassthruCentralNode);
+	//	ImGui::End();
+
+	//	ImGui::Render();
+	//	ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
 
 	}
