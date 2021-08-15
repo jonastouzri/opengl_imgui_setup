@@ -124,9 +124,9 @@ int main() {
 		
 		ImGui::NewFrame();
 
-		ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 5.0f);
-		ImGui::PopStyleVar(1);	// use this when PushStyleVar after newframe()
-		
+		//ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 5.0f);
+		//ImGui::PopStyleVar(1);	// use this when PushStyleVar after newframe()
+		//
 		
 	
 
