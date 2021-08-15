@@ -102,38 +102,37 @@ int main() {
 
 	ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize,0.0f);
 	ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 5.0f);
+	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(10.0f, 0.0f));
+
+	//ImGui::PopStyleVar(3);
 
 	ImGuiWindowFlags windowFlags = ImGuiWindowFlags_NoDocking | ImGuiWindowFlags_NoNavFocus |
 									ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse;
-
+	
 
 	while (!glfwWindowShouldClose(window)){
 
 		glClear(GL_COLOR_BUFFER_BIT);
 
-		//
+
 
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGlfw_NewFrame();
-	//
+
 
 
 		
-		
-
 		ImGui::NewFrame();
+
+		ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 5.0f);
+		ImGui::PopStyleVar(1);	// use this when PushStyleVar after newframe()
+		
 		
 	
-
-
-
-		
-
 
 		bool b = false;
 		ImGui::Begin("test", &b, 0);
 		//ImGui::Begin("window");
-
 		ImGui::Text("hello");
 
 
